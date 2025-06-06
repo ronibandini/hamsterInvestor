@@ -1,6 +1,8 @@
-# hamsterInvestor
+# Wall Street Hamster
 
 Hamster investor with Raspberry Pi and Alpaca trading
+
+*** Version 2 at https://github.com/ronibandini/hamsterInvestor/tree/main/v2
 
 # Parts
 
