@@ -65,12 +65,14 @@ api_key = ''
 api_secret = ''
 base_url = '' # for testing use https://paper-api.alpaca.markets
 api = tradeapi.REST(api_key, api_secret, base_url, api_version='v2')
+howManyStocks=3
 
 currentTrade="Buy"
 stockSelected="False"
 lastTickerTraded=""
 numberOfStocks=10
 pauseBetweenOrders=5
+
 
 # logo
 image = Image.open('/home/pi/alpaca/logorat.png').convert('1')
@@ -117,8 +119,8 @@ now = datetime.datetime.now()
 myTickers = ["MELI", "TS", "GLOB"]
 
 print('------------------------------------------------')
-print('Hamster trading')
-print('Roni Bandini - 12-2021 - Buenos Aires, Argentina')
+print('Wall Street Hamster')
+print('Roni Bandini - Buenos Aires, Argentina')
 
 print("Started " + str( now.strftime("%Y-%m-%d %H:%M:%S")) )
 
@@ -273,16 +275,14 @@ try:
 								counter -= 1
 
 						if counter<0:
-								counter	=	2
-						if counter>2:
+								counter	= howManyStocks-1
+						if counter>howManyStocks-1:
 								counter	=	0
 
 						print("Ticker:"+str(myTickers[counter]))
-						#print("Current trade:"+currentTrade+" Ok to trade:"+stockSelected)
 
 						clkLastState = clkState
 
-						#sleep(0.01)
 
 				sleep(0.01)
 
