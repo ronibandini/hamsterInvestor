@@ -1,6 +1,8 @@
 # Wall Street Hamster
 
-Requirements
+Complete tutorial at https://hackaday.io/project/203244-wall-street-hamster
+
+# Requirements
 
 Raspberry Pi (2 or 3 will do it)https://www.dfrobot.com/product-2028.html?tracking=61357a929f73e
 Rotary Encoder https://amzn.to/3FIgLZ5
@@ -8,7 +10,7 @@ Oled screen https://www.dfrobot.com/product-1514.html?tracking=61357a929f73e
 PIR sensor https://www.dfrobot.com/product-119.html?tracking=61357a929f73e
 3d printed parts https://cults3d.com/en/3d-model/gadget/hamster-trading
 
-Software
+# Software
 
 Setup the Raspberry Pi with Raspberry Pi OS (download Windows, Mac or Linux software from https://www.raspberrypi.org/downloads to copy the image into the microSD card)
 
@@ -58,9 +60,9 @@ Upload all project files to root/alpaca folder. You can use any FTP client with 
 
 $ nano wallstreethamster.py and enter your own Alpaca credentials
 
-api_key = 'AAAAAAAAAAAAAAAA'
-api_secret = 'AAAAAAAAAAAAAAAAAAAAAAAA'
-base_url = 'https://paper-api.alpaca.markets'
+api_key = ''
+api_secret = ''
+base_url = ''
 
 Download and print the 3d parts.
 
